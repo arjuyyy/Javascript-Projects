@@ -1,0 +1,52 @@
+	<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simon</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+</head>
+
+<body>
+	
+	<div class="box">
+		<h1 id="game-title">SIMON GAME</h1>
+	</div>
+	<a href="#instruction">
+			Not sure how Simon Game works?
+	</a>
+  <h2 id="level-title">Let's test your memory!</h2>
+  
+  <button id="start" role="button">Start</button>
+  <div class="container">
+	 <div type="button" id="green" class="btn green">
+	  </div>
+   <div type="button" id="red" class="btn red">
+    </div>
+   <div type="button" id="yellow" class="btn yellow">
+    </div>
+   <div type="button" id="blue" class="btn blue">
+   </div>
+  </div>
+  
+	<h2 id="your-turn">Your turn.</h2>
+	<div class="box">
+		<h3 id="highest-level">
+			Highest level:<span id="score"> 0</span> 
+		</h3>
+	</div>
+	<div id="instruction">
+		<h2 id="instruction-title">
+			Do what Simon says!
+		</h2>
+		<p>
+			Just follow the pattern or sequence of lights and sounds for as long as you can! Hmmm If you can!
+		</p>
+	</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="./game.js"></script>
+</body>
+
+</html>

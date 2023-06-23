@@ -1,0 +1,158 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body {
+	font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  background-color: #9DB2BF; 
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+.box {
+	border: 10px solid #27374D; 
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+#game-title {
+  font-size: 4rem;
+  padding: 20px 10px 10px; 
+  color: #27374D;
+  text-shadow: 2px 0 #DDE6ED;
+}
+#level-title{
+  font-size: 2rem;
+  margin:  5%;
+  color: #526D82;
+  text-shadow: 1px 0 #27374D;
+}
+#your-turn {
+  font-size: 2rem;
+  margin:  5%;
+  color: #9DB2BF; 
+}
+#highest-level {
+	font-size: 1rem;
+	padding: 10px 30px;
+	color: #27374D;
+	text-shadow: 1px 0 #DDE6ED;
+}
+a:link {
+	font-size: 0.5rem;
+	color: #27374D;
+}
+a:visited {
+	color: #526D82;
+}
+#instruction {
+	height: 200px;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 350px;
+}
+#instruction-title {
+	font-size: 2rem;
+	color: #27374D;
+	text-shadow: 1px 0 #DDE6ED;
+	margin-bottom: 30px;
+}
+p {
+	color: #526D82;
+	text-shadow: 1px 0 #27374D;
+	line-height: 1.5;
+}
+.container {
+	display: grid; 
+	grid-template-rows: 1fr 1fr; 
+	grid-template-columns: 1fr 1fr; 
+	gap: 10px; 
+}
+
+.btn {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  width: 150px; 
+  height: 150px; 
+  border: 10px solid #DDE6ED;
+  border-radius: 20%;
+  opacity: 0.8;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+/* for start button */
+#start {
+  background-color: #DDE6ED; 
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #526D82;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin-bottom: 5%; 
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+#start:hover,
+#start:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+#start:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+#start:active {
+	background-color: #a0c7e4;
+	box-shadow: none;
+	color: #2c5777;
+}
+
